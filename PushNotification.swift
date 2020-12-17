@@ -8,7 +8,7 @@
 import Foundation
 import UserNotificationsUI
 
-// #1 set the UNUserNotificationCenterDelegate
+// # 1 set the UNUserNotificationCenterDelegate
 // # 2 set the delegate in didFinishLaunchingWithOptions
 // # 3 create two func
 1- userNotificationCenter "willPresent"
@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
     }
     
-    // #3 userNotificationCenter "willPresent"
+    // #3 -1 userNotificationCenter "willPresent"
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         
         // add completionHandler
@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
     }
     
-    // #3 userNotificationCenter "didReceive"
+    // #3  -2 userNotificationCenter "didReceive"
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         
         // create userIfo to get notification details es"id,title,description...."
