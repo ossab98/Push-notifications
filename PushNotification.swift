@@ -49,12 +49,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let homeNavigation = mainStoryboard.instantiateViewController(withIdentifier: "homeNavigation") as! UINavigationController
             let notificationController = mainStoryboard.instantiateViewController(withIdentifier: "NotificheController") as! UINavigationController
-            
+                
                 //homeNavigation.pushViewController(notificationController, animated: false)
-                // u can use pushViewController but you should comment *
+                // you can use pushViewController, you should comment line 57
                 UIApplication.shared.keyWindow?.rootViewController = homeNavigation
                 UIApplication.shared.keyWindow?.makeKeyAndVisible()
-                homeNavigation.present(notificationController, animated: false, completion: nil) // To commet #*#
+                homeNavigation.present(notificationController, animated: false, completion: nil)
             
         }
         
